@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  radial-gradient(#05668D 0.4px, transparent 0.4px), radial-gradient(#05668D 0.4px, #e5e5f7 0.4px);
+    background-size: 16px 16px;
+    background-position: 0 0,8px 8px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#nav{
+    height: 7vh;
+    width: 100%;
+    border-radius: 0vw 0vw 2vw 2vw;
+    margin: 0vh auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+.nav-left h1{
+    font-size: 2rem;
+    color: #003566;
+}
+#input{
+    height: 5vh;
+    width: 40vw;
+    border: 1px solid black;
+    border-radius: 10vw;
+    padding: 0vw 5vw;
+    font-size: 1rem;
+}
+.button{
+    align-items: center;
+    height: 5vh;
+    width: 7vw;
+    border-color: white;
+    border-radius: 10vw;
+    background-color: #FFC300;
+    color: white;
+}
+.hamburger{
+    display: none;
+}
+.search{
+    position: relative;
+    left: 3vw;
+    font-size: 1rem;
+}
+
+
+/* note taking & blog publish*/
+.write{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    background-color: #FFC300;
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+    z-index: 10;
+}
+.note{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    background-color: #FFC300;
+    position: fixed;
+    top: 80vh;
+    right: 2vw;
+    z-index: 10;
+}
+.icon{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+}
+.note_space{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    background-color: #FFC300;
+    position: fixed;
+    top: 43vh;
+    right: 7vw;
+    z-index: 10;
+}
+.note_space h3{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 2vh 1vw;  
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 1vw;
+}
+.note_space textarea{
+    height: 23vh;
+    width: 18vw;
+    margin: 0vh 1vw;  
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+.note_space button{
+    height: 5vh;
+    width: 7vw;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 1px black;
+    color: #FFC300;
+    background-color: white;
+    margin: 1vh 1vw; 
+    font-size: 1rem;
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}
+
+
+.blog-container{
+    padding: 12vh 4vw;
+    font-size: 1.2rem;
+}
+
+
+.sub-heading1{
+    font-size: 2.5rem;
+    margin: 0vh 4vw;
+}
+.sub-heading2{
+    letter-spacing: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin: 0vh 4vw 5vh;
+}
+
+
+#more_blogs{
+    width: auto;
+    height: 65vh;
+    display: flex;
+    margin:0vw 2vw;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    margin-bottom: 15vh;
+}
+#more_blogs h1{
+    font-size: 2rem;
+}
+
+
+.card{
+    height: 55vh;
+    width: 20vw;
+    background-color: #FFC300;
+    margin: 0vw 2vw;
+    border-radius: 1rem;
+}
+.card:hover{
+    scale: 1.05;
+}
+.card img{
+    object-fit: cover;
+    width: 20vw;
+    height: 40vh;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+.card_info{
+    display: flex;
+    justify-content: space-around;
+    padding: 1vw 2vw;
+}
+.card_info1 img{
+    object-fit: cover;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+
+}
+.card_info1{
+    margin-left: -2vw;
+}
+.card_info2{
+    margin-right: 7vw;
+}
+
+footer{
+    margin-top: 10vh;
+    height: 55vh;
+    width: 100vw;
+    background-color: #333;
+}
+footer h2{
+    font-size: 3rem;
+    color: white;
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+footer input{
+    height: 7vh;
+    width: 50vw;
+    margin: 2vh auto;
+    border: 1px solid black;
+    border-radius: 5vw;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    font-size: 1.2rem;
+
+}
+.footer-box{
+    height: 7vh;
+    width: 15vw;
+    border: 1px solid black;
+    border-radius: 0vw 5vw 5vw 0vw;
+    background-color: #FFC300;
+    position: relative;
+    bottom: 9vh;
+    left: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.our-info{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.our-info p{
+    font-size: 1.2rem;
+    padding: 2vh 0vw;
+}
+.our-info1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-infos img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 10px;
+}
+.our-infos{
+    width: 15vw;
+}
+.our-infos ul{
+    list-style: none;
+}
+.our-infos li{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+
+
+@media(max-width:900px){
+    #more_blogs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        gap: 1;
+    }
+    .card{
+        height: auto;
+        width: 40vw;
+        background-color: #FFC300;
+        margin: 5vh auto;
+        border-radius: 1rem;
+    }
+    .card_image img{
+        object-fit: cover;
+        width:40vw;
+        height: 50vh;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    .search{
+        display: none;
+    }
+}
+
+
+@media(max-width:500px){
+#more_blogs{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+}
+.hamburger{
+    display: block;
+    font-size: 1.5rem;
+}
+.nav-left h1{
+    font-size: 1.5rem;
+    color: #003566;
+    margin-left: -5vw;
+}
+#input{
+    padding: 0vw 5vw;
+}
+.nav-right{
+    display: none;
+}
+
+.card{
+    height: auto;
+    width: 90vw;
+    background-color: #FFC300;
+    margin: 5vh auto;
+    border-radius: 1rem;
+
+}
+.card_image img{
+    object-fit: cover;
+    width: 90vw;
+    height: 40vh;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+}
+
+

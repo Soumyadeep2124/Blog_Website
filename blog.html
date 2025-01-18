@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <div class="hamburger">
+                <i class="ri-menu-2-line"></i>
+            </div>
+            <div class="nav-left">
+                <h1>ThinkBlog</h1>
+            </div>
+            <div class="nav-middle">
+                <i class="ri-search-2-line search"></i>
+                <input type="text" name="" id="input" placeholder="Search Blogs here">
+            </div>
+            <div class="nav-right">
+                <button class="button">Sign In</button>
+                <a href="index.html"><button class="button">Home</button></a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="write"><a href="write.html" style="text-decoration: none; color: #000;"><i class="ri-edit-2-line icon"></i></a></div>
+        <div class="note"><i class="ri-sticky-note-add-fill icon"></i></div>
+        <div class="note_space hidden">
+            <h3>Sticky Notes</h3>
+            <textarea name="" id="user_note"></textarea>
+            <button class="note_submit">Save</button>
+        </div>
+
+        <div class="blog-container">
+            <h1 id="blog-title"></h1>
+            <p id="blog-content"></p>
+        </div>
+
+        <h2 class="sub-heading1">More Blogs</h2>
+        <h2 class="sub-heading2">Read more blogs like these in the world of Blogs</h2>
+
+        <div id="more_blogs"></div>
+    </main>
+
+    <footer>
+        <h2>Subscribe for new posts</h2>
+        <input type="text" placeholder="Your Email Id">
+        <div class="footer-box"><a href="#subscribe">Subscribe</a></div>
+        <div class="our-info">
+            <div class="our-info1 our-infos">
+                <img src="https://img.freepik.com/premium-vector/abstract-sphere-logo-soft-style-round-icon-yin-yang-circle-emblem_177517-1242.jpg?semt=ais_hybrid" alt="">
+            </div>
+            <div class="our-info2 our-infos">
+                <p>Social Media</p>
+                <ul>
+                    <a href="https://www.facebook.com">
+                        <li>Facebook</li>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <li>Instagram</li>
+                    </a>
+                    <a href="https://www.linkedin.com">
+                        <li>Linkedin</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="our-infos">
+                <p>About Us</p>
+                <ul>
+                    <li>Top blog Website</li>
+                    <li>Award winning blogs</li>
+                    <li>Various Topics</li>
+                </ul>
+            </div>
+            <div class="our-infos">
+                <p>Features</p>
+                <ul>
+                    <li>Latest Blogs</li>
+                    <li>Authentic Blogs</li>
+                    <li>Minimal Prices</li>
+                </ul>
+            </div>
+            <div class="our-infos">
+                <p>Contact us</p>
+                <ul>
+                    <li>+91 9876543210</li>
+                    <li>mrrandom123@gmail.com</li>
+                    <li>New Delhi</li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    
+    <script src="blog.js"></script>
+</body>
+</html>

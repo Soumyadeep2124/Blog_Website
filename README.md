@@ -16,12 +16,13 @@ This is a simple and beautiful blog website built using HTML, CSS, and JavaScrip
 - CSS: For styling and layout.
 - JavaScript: For interactivity and dynamic features.
 
-# Contributing
+## Contributing
 Want to improve this project? Follow these steps:
 
-Fork this repository.
-Make changes in your own copy.
-Send a pull request to suggest your changes.
+- Fork this repository.
+- Make changes in your own copy.
+- Send a pull request to suggest your changes.
 
 
 # Deployed Link
+https://soumyadeep2124.github.io/Blog_Website/
